@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: JFS;
+  src: url("/fonts/JosefinSans-Regular.ttf");
+  format: ("ttf");
+  font-display: swap;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -86,13 +94,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
 }
 
 a {
@@ -104,4 +106,17 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.productCard{
+  cursor:pointer
+}
+
+.productCardImage:hover{
+  transform: scale(0.95);
+  transition: 0.5s;
 }
